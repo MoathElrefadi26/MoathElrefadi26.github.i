@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PrimeCode — حلول برمجية احترافية</title>
+  <meta name="description" content="PrimeCode - تطوير مواقع، تطبيقات موبايل، ذكاء اصطناعي، أنظمة مخصصة وتصميم UI/UX" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#home" title="العودة إلى الرئيسية">
+        <img src="logo.svg.png" alt="شعار PrimeCode" />
+        <div>
+          <h1>PrimeCode</h1>
+          <p>حلول برمجية وابتكار رقمي</p>
+        </div>
+      </a>
+
+      <nav aria-label="قوائم الموقع">
+        <button class="menu-btn" aria-expanded="false" aria-controls="main-menu">☰</button>
+        <ul id="main-menu">
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">خدماتنا</a></li>     
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-card">
+        <h2>نحول افكارك لواقع</h2>
+        <p class="lead">شركة PrimeCode تقدم خدمات برمجية بجودة عالية مرضية العملاء </p>
+
+        <div class="cta">
+          <a class="btn" href="#services">عرض الخدمات</a>
+          <a class="btn ghost" href="#contact">تواصل معنا</a>
+        </div>
+
+        <div style="margin-top:18px; color:var(--muted); font-size:.95rem">
+          البريد الإلكتروني: <a href="mailto:PrimeCode340@gmail.com" style="color:var(--accent); text-decoration:none; font-weight:700">PrimeCode340@gmail.com</a>
+        </div>
+      </div>
+
+      <aside class="mini">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <div style="font-weight:700">فريق PrimeCode</div>
+          <div style="color:var(--muted);font-size:.9rem">خبرة وخدمة موجهة للعميل</div>
+        </div>
+
+        <!-- استبدلت كتلة الكود بصورة فريق/تصميم لتقليل الطابع "البرمجي/AI" -->
+        <div class="team-image">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6f9b8d0a1b6f7e3d" alt="فريق PrimeCode" />
+        </div>
+
+        <div style="margin-top:12px; color:var(--muted); font-size:.92rem">
+          فريق متعدد التخصصات يركز على حل مشاكل العملاء لتحسين عمل مشاريعهم 
+        </div>
+      </aside>
+    </section>
+
+    <div class="spacer-large"></div>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="section-title">
+        <h3 id="about-title">من نحن</h3>
+        <p>PrimeCode شركة متخصصة في الحلول الرقمية المتكاملة</p>
+      </div>
+
+      <div class="about">
+        <div class="text">
+          <p>نحن فريق من المطورين والمصممين ومهندسي البيانات نعمل على تحويل الأفكار إلى منتجات رقمية قابلة للنشر، مع التركيز على أداء عالي وتجربة مستخدم ممتازة</p>
+          <div class="badges" style="margin-top:12px">
+            <span class="badge">تطوير مواقع</span>
+            <span class="badge">تطبيقات موبايل</span>
+            <span class="badge">حلول بيانات</span>         
+          </div>
+        </div>
+
+        <div style="width:260px;">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9a2b1f8f3b4c3f9a8b8e5c7d9ea1f7ad" alt="تصميم يدل على عمل جماعي" style="width:100%;border-radius:10px;display:block">
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer-medium"></div>
+
+    <section id="services" aria-labelledby="services-title">
+      <div class="section-title">
+        <h3 id="services-title">خدماتنا</h3>
+        <p>حلول مخصصة لتناسب احتياجات شركتك</p>
+      </div>
+
+      <div class="services-grid" role="list">
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="">
+        <h3>تطوير مواقع الويب</h3>
+        <p>نصمم مواقع احترافية متجاوبة وسريعة</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" alt="">
+        <h3>تطبيقات الموبايل</h3>
+        <p>تطبيقات iOS و Android بأداء ممتاز</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712069.png" alt="">
+        <h3>حلول تحليل بيانات</h3>
+        <p>نماذج تحليل وتقارير عملية تساعد اتخاذ القرار</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1995/1995482.png" alt="">
+        <h3>أنظمة مخصصة</h3>
+        <p>أنظمة إدارة أعمال متكاملة</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="">
+        <h3>تصميم UI/UX</h3>
+        <p>واجهات جذابة وتجربة مستخدم ممتازة</p>
+      </div>
+      </div>
+    </section>
+
+    <div class="spacer-medium"></div>
+
+   
+
+    <div class="spacer-medium"></div>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="section-title">
+        <h3 id="faq-title">الأسئلة الشائعة</h3>
+        <p>إجابات عامة على الأسئلة المتكررة</p>
+      </div>
+
+      <div style="display:grid;gap:10px">
+        <details>
+          <summary>كم يستغرق بناء موقع متوسط؟</summary>
+          <div style="margin-top:8px;color:var(--muted)">على حسب حجم المشروع لكن غالبا بين 3 أسابيع إلى 6 أسابيع</div>
+        </details>
+
+        <details>
+          <summary>هل تقدمون صيانة بعد التسليم؟</summary>
+          <div style="margin-top:8px;color:var(--muted)">نقدمو على حسب الاتفاق</div>
+        </details>
+
+        <details>
+          <summary>ما هي طرق الدفع المقبولة؟</summary>
+          <div style="margin-top:8px;color:var(--muted)">كاش , تحويل بنكي</div>
+        </details>
+      </div>
+    </section>
+
+    <div class="spacer-medium"></div>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="section-title">
+        <h3 id="contact-title">تواصل معنا</h3>
+        <p>تواصل معانا كيف ما تحب PrimeCode </p>
+      </div>
+
+      <div class="contact-cards">
+        <div class="contact-card">
+          <strong>البريد الإلكتروني</strong>
+          <div style="margin-top:8px"><a href="mailto:PrimeCode340@gmail.com" style="color:var(--accent); text-decoration:none; font-weight:700">PrimeCode340@gmail.com</a></div>
+          <p style="color:var(--muted); margin-top:10px">للامور التجارية، عروض الأسعار أو استفسارات عامة</p>
+        </div>
+
+        <div class="contact-card">
+          <strong>تابعنا على مواقع التواصل الإجتماعي</strong>
+          <div class="socials" style="margin-top:10px">
+            <a href="https://www.facebook.com/profile.php?id=61581270995240" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color:#1877F2"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.07 5.66 21.19 10.44 21.95v-6.78H7.9v-2.9h2.54V9.41c0-2.5 1.5-3.89 3.8-3.89 1.1 0 2.25.2 2.25.2v2.48h-1.27c-1.25 0-1.64.78-1.64 1.58v1.9h2.8l-.45 2.9h-2.35v6.78C18.34 21.19 22 17.07 22 12.07z"/></svg>
+              فيسبوك
+            </a>
+
+            <a href="https://www.instagram.com/prime.code1?igsh=NDc3N3VyZDRwMGM2" target="_blank" rel="noopener noreferrer" aria-label="انستغرام">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color:#E1306C"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A3.8 3.8 0 1 0 15.8 12 3.8 3.8 0 0 0 12 8.2zm4.9-.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z"/></svg>
+              انستغرام
+            </a>
+
+            <a href="https://wa.me/2180934041417" target="_blank" rel="noopener noreferrer" aria-label="واتساب">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color:#25D366"><path d="M20.52 3.48A11.94 11.94 0 0 0 12 .5C6.21.5 1.5 5.21 1.5 11c0 1.92.5 3.8 1.48 5.46L.5 23.5l7.38-2.03A11.86 11.86 0 0 0 12 22.5c5.79 0 10.5-4.71 10.5-10.5 0-3.01-1.22-5.82-3.98-8.52zM12 20.5c-1.3 0-2.57-.34-3.68-.98l-.26-.16-4.39 1.21 1.19-4.28-.17-.28A8.5 8.5 0 1 1 20.5 11 8.48 8.48 0 0 1 12 20.5z"/><path d="M17.19 14.29c-.26-.13-1.51-.75-1.75-.84s-.41-.13-.58.13-.67.84-.82 1.01-.31.19-.57.06a7.16 7.16 0 0 1-2.12-1.31c-.39-.39-.64-.87-.71-1.14s-.01-.47.17-.6c.17-.13.38-.34.57-.51.19-.17.25-.29.38-.48.13-.19.06-.36-.03-.49-.09-.13-.58-1.4-.8-1.93-.21-.49-.43-.43-.58-.44l-.5-.01c-.17 0-.44.06-.67.31s-.88.86-.88 2.09 0 2.44 1 3.67c1.01 1.22 2.31 2.76 4.98 3.76 2.67 1 3.29.84 3.89.79.6-.06 1.95-.8 2.23-1.57.28-.77.28-1.43.2-1.57-.08-.14-.3-.22-.57-.35z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- تم نقل فقرة "كل الحقوق محفوظة" لتكون في أسفل الصفحة بشكل منفصل -->
+  <footer>
+    <div style="margin-bottom:8px">© <strong>PrimeCode</strong> — كل الحقوق محفوظة</div>
+    <div style="color:var(--muted)">البريد: <a href="mailto:PrimeCode340@gmail.com" style="color:var(--accent); text-decoration:none">PrimeCode340@gmail.com</a> — تواصل: <a href="https://wa.me/2180934041417" style="color:var(--accent); text-decoration:none">واتساب</a></div>
+
+    <!-- الموقع حسب طلبك -->
+    <div class="location"> ليبيا - بنغازي</div>
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
