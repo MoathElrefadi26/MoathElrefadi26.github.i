@@ -10,6 +10,9 @@
   --radius:12px;
   --soft-shadow: 0 10px 36px rgba(2,8,20,0.6);
   --text: #e6eef8;   /* main text color */
+
+  /* header sizing so we can reserve space and keep header visible */
+  --header-height: 76px;
 }
 
 /* base layout */
@@ -28,6 +31,8 @@ body{
   padding-bottom:120px;
   position:relative;
   overflow-x:hidden;
+  /* reserve top space equal to header height so content doesn't jump underneath fixed header */
+  padding-top: var(--header-height);
 }
 
 /* subtle "screen with code" texture but toned for dark-blue, very low contrast */
@@ -78,18 +83,29 @@ header, .container, footer, .hero-card, .mini, .service-card, .contact-card, .pr
   z-index: 2;
 }
 
-/* Top navigation */
+/* Top navigation
+   Changed from sticky to fixed and increased z-index so it always stays visible.
+   We also use a CSS variable for height and reserved the same amount at body padding-top.
+*/
 header{
-  position:sticky;
-  top:0;
-  z-index:3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  z-index: 9999;
   backdrop-filter: blur(6px);
-  background: linear-gradient(180deg, rgba(4,12,20,0.65), rgba(4,12,20,0.35));
+  background: linear-gradient(180deg, rgba(4,12,20,0.85), rgba(4,12,20,0.6));
   border-bottom:1px solid rgba(255,255,255,0.03);
 }
+
+/* Keep the nav layout centered and consistent */
 .nav{
   max-width:1200px;
   margin:0 auto;
+  width:100%;
   display:flex;
   align-items:center;
   justify-content:space-between;
